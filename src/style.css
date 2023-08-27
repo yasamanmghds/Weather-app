@@ -109,9 +109,8 @@ a {
 }
 .active {
   color: #e3dd62;
-  text-decoration: underline;
 }
 .units:hover {
-  cursor: pointer;
   color: #db901c;
+  cursor: default;
 }

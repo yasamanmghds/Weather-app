@@ -58,13 +58,15 @@ function apiRequest(city) {
 
 function searchBar(event) {
   event.preventDefault();
+  fahrenheit.classList.remove("active");
+  celsius.classList.add("active");
   let searchText = document.getElementById("search").value;
   apiRequest(searchText);
 }
 
 function calculateFarTemp() {
-  fahrenheit.classList.add("active");
   celsius.classList.remove("active");
+  fahrenheit.classList.add("active");
   let temprature = document.getElementById("cel");
   let calc = (celsiusTemp * 9) / 5 + 32;
   temprature.innerHTML = Math.round(calc);
