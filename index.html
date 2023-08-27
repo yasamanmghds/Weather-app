@@ -41,26 +41,33 @@
           </form>
         </div>
         <div>
-          <button id="current-location" class="current-loc-btn">
+          <!--<button id="current-location" class="current-loc-btn">
             📍Current Location
-          </button>
+          </button>-->
         </div>
       </div>
       <hr />
       <div>
         <div class="current-weather-container">
-          <h2 id="city-name">Lisbon</h2>
-          <h2 id="current-date"></h2>
+          <h2 id="city-name"></h2>
+          <div class="date-container">
+            <h3 class="last-updated">Last updated at:</h3>
+            <h3 id="current-date"></h3>
+          </div>
           <h2 id="weather">Clouds</h2>
         </div>
         <div class="info-container">
           <div class="weather-container">
-            <h1 id="cel" class="content">⛅ 24</h1>
-            <p class="tabs">℃</p>
+            <img id="icon" src="" alt="" />
+            <h1 id="cel" class="content"></h1>
+            <p class="units-container">
+              <span id="cel-unit" class="units active">℃</span> <span>|</span>
+              <span id="far-unit" class="units">℉</span>
+            </p>
           </div>
           <div>
-            <h4 id="humidity">Humidity: 63%</h4>
-            <h4 id="wind-speed">Wind: 5km/h</h4>
+            <h4 id="humidity"></h4>
+            <h4 id="wind-speed"></h4>
           </div>
         </div>
       </div>
@@ -106,6 +113,6 @@
       </p>
     </div>
 
-    <script src="src/app.js"></script>
+    <script src="src/weather.js"></script>
   </body>
 </html>

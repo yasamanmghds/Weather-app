@@ -65,11 +65,14 @@ a {
 }
 .weather-container {
   display: flex;
+  align-items: center;
 }
-#weather {
+#weather::first-letter {
   text-transform: capitalize;
 }
-
+#current-date::first-letter {
+  text-transform: capitalize;
+}
 .current-loc-btn {
   background: transparent;
   color: #e3dd62;
@@ -93,5 +96,22 @@ a {
   color: #e3dd62;
 }
 .footer-link a:hover {
+  color: #db901c;
+}
+.date-container {
+  display: flex;
+}
+.last-updated {
+  margin: 0 5px 0 0;
+}
+.units-container {
+  margin-left: 15px;
+}
+.active {
+  color: #e3dd62;
+  text-decoration: underline;
+}
+.units:hover {
+  cursor: pointer;
   color: #db901c;
 }
