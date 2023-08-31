@@ -8,6 +8,13 @@ body {
 p {
   margin-bottom: 5px;
 }
+a {
+  color: #5e4b8c;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 ::placeholder {
   color: #2c2a4d;
   opacity: 1;
@@ -101,6 +108,10 @@ p {
 }
 .weather-condition {
   padding-top: 10px;
+}
+.footer {
+  width: 55%;
+  margin: 10px 0;
 }
 @media screen and (max-width: 600px) {
   body {
