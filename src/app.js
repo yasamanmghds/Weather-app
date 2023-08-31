@@ -40,7 +40,6 @@ function getTemprature(response) {
   let windSpeed = document.getElementById("wind-speed");
   let humidity = document.getElementById("humidity");
   let description = document.getElementById("description");
-  //console.log(response);
   let lon = response.data.coord.lon;
   let lat = response.data.coord.lat;
   getForecast(lat, lon);
@@ -69,7 +68,6 @@ function forecast(response) {
   let foreCast = document.getElementById("forecast");
   let forcastHtml = `<div class="row custom-row">`;
   weatherForecast.forEach(function (day, index) {
-    console.log(day);
     if (index < 5) {
       forcastHtml += `<div class="col-auto forecast-cards">
             <p>${formatDay(day.dt)}</p>
